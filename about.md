@@ -2,6 +2,8 @@
 layout: default
 title: About Me
 ---
+<img width="169" height="180" alt="image" src="https://github.com/user-attachments/assets/8e3ea888-420c-416a-b3d5-1c2943599ff5" />
+
 Hello! I am MH.
 I like Warhammer my favorite Age of Sigmar. I like the Stormcast most. If you like that I'm always looking for friends who like Warhammer.
 
