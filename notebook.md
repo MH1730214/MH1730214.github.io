@@ -51,11 +51,11 @@
 |   List   | A collection of values in a specific order. | `List<String> names = [];` | A wallet or a grocery list |  |
 |   Null   | A special value that means “nothing.” | `String? name = null;` |   |  |
 |   Funtion   | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |  |  |
-|      | The information passed into a function to change how it works. | `greet(String name)` |  |  |
-|      | The result a function gives back. | `return total;` |  |  |
-|      | Where a variable or function can be used. | (No set syntax — concept-based) |  |  |
-|      | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |  |  |
-|      | A specific version of a class. | `Dog myDog = Dog();` |  |  |
+|   Parameter   | The information passed into a function to change how it works. | `greet(String name)` | information that can change |  |
+|   return   | The result a function gives back. | `return total;` |  |  |
+|   Scope   | Where a variable or function can be used. | (No set syntax — concept-based) | a class in school |  |
+|   Class   | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |  |  |
+|   Object   | A specific version of a class. | `Dog myDog = Dog();` |  |  |
 |      | A variable that belongs to a class/object. | `String name;` |  |  |
 |      | A function that belongs to a class. | `void bark() {}` |  |  |
 |      | A special function used to set up a class when it’s created. | `Dog(this.name);` |  |  |
