@@ -4,7 +4,10 @@
 - [Flutter notes](#flutter-notes)
   - [What is flutter](#what-is-flutter)
   - [key terms and definitions](#key-terms-and-definitions)
+  - [layout and design widgets](#layout-and-design-widgets)
+  - [Definitions with Structures](#flutter-definitions-with-struture)
 - [Code Definitions](#code-definitions)
+- [notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
 
 
 ## Flutter Notes
@@ -36,35 +39,6 @@
 | named routes| predefinded paths to navigate between scrrens | '/', '/page2', '/page3',ect   |
 |main()| The funtion thqt runs the app|found in main.dart|
 ---
-
-
-## Code Definitions
-| Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
-|------|------------|--------------------------|-------------------|-------------|
-|   Variable   | A named container used to store a value that may change. | `var x = 5;` |  Goals in soccer|  |
-|   Constant   | A fixed value that cannot change once set. | `const PI = 3.14;` | your Username | File name |
-|   Data Type   | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` | Videos or numbers | THe different Data the code needs to store |
-|   String   | A sequence of characters used to represent words or text. | `"Hello World"` | words  | Titles on a website|
-|  Integer    | Whole number values. | `int age = 16;` | days on a calender | the total number of notifications you have |
-|   Double   | Number values with decimals. | `double age = 16.2;` |  | animations |
-|   Boolean   | A value that can be true or false. | `bool isLoggedIn = false;` | are the lights on or not |  |
-|   List   | A collection of values in a specific order. | `List<String> names = [];` | A wallet or a grocery list |  |
-|   Null   | A special value that means “nothing.” | `String? name = null;` |   |  |
-|   Funtion   | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |  |  |
-|   Parameter   | The information passed into a function to change how it works. | `greet(String name)` | information that can change |  |
-|   return   | The result a function gives back. | `return total;` |  |  |
-|   Scope   | Where a variable or function can be used. | (No set syntax — concept-based) | a class in school |  |
-|   Class   | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |  |  |
-|   Object   | A specific version of a class. | `Dog myDog = Dog();` |  |  |
-|      | A variable that belongs to a class/object. | `String name;` |  |  |
-|      | A function that belongs to a class. | `void bark() {}` |  |  |
-|      | A special function used to set up a class when it’s created. | `Dog(this.name);` |  |  |
-|      | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |  |  |
-|      | Changing how a built-in or inherited function behaves. | `@override` |  |  |
-|      | A function that does not return a value. | `void printMessage() {}` |  |  |
-
-
-
 ### Layout and Design Widgets
 - How do you center a widget?
 - How do you align something to the left or right?
@@ -259,3 +233,58 @@ Blockquotes = Notes/Tips
 Collapsible = Hide/Show detail
 
 Keep it simple, consistent, and clear.
+
+## Flutter Definitions With Structures
+| Term | Definition and Description | Base Structure | Real Life Example | App Example |
+|------|----------------------------|----------------|-------------------|-------------|
+|   main   | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` | a car starting | an app starting  |
+|      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
+|      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  |  |
+|      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
+|      | A widget that shows things side-by-side. | `Row(...)` |  |  |
+|      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  |
+|      | A widget to display text on the screen. | `Text('Hello')` |  |  |
+|      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
+|      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
+|      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
+|      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |  |
+|      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |  |
+|      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
+|      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  
+|      | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
+|      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
+|      | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
+|      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
+|      | Required in every widget class to describe what to show. | `build` |  |  |
+|      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
+|      | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
+|      | A keyword that means the value won't change and is set once. | `const` |  |  |
+
+
+## Code Definitions
+| Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
+|------|------------|--------------------------|-------------------|-------------|
+|   Variable   | A named container used to store a value that may change. | `var x = 5;` |  Goals in soccer|  |
+|   Constant   | A fixed value that cannot change once set. | `const PI = 3.14;` | your Username | File name |
+|   Data Type   | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` | Videos or numbers | THe different Data the code needs to store |
+|   String   | A sequence of characters used to represent words or text. | `"Hello World"` | words  | Titles on a website|
+|  Integer    | Whole number values. | `int age = 16;` | days on a calender | the total number of notifications you have |
+|   Double   | Number values with decimals. | `double age = 16.2;` |  | animations |
+|   Boolean   | A value that can be true or false. | `bool isLoggedIn = false;` | are the lights on or not |  |
+|   List   | A collection of values in a specific order. | `List<String> names = [];` | A wallet or a grocery list |  |
+|   Null   | A special value that means “nothing.” | `String? name = null;` |   |  |
+|   Funtion   | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |  |  |
+|   Parameter   | The information passed into a function to change how it works. | `greet(String name)` | information that can change |  |
+|   return   | The result a function gives back. | `return total;` |  |  |
+|   Scope   | Where a variable or function can be used. | (No set syntax — concept-based) | a class in school |  |
+|   Class   | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |  |  |
+|   Object   | A specific version of a class. | `Dog myDog = Dog();` |  |  |
+|    property  | A variable that belongs to a class/object. | `String name;` |  |  |
+|   Method   | A function that belongs to a class. | `void bark() {}` |  |  |
+|    constructor  | A special function used to set up a class when it’s created. | `Dog(this.name);` |  |  |
+|   Abstraction   | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |  |  |
+|   Override   | Changing how a built-in or inherited function behaves. | `@override` | most stats being the same but one person might have better stats |  |
+|   Void   | A function that does not return a value. | `void printMessage() {}` |  |  |
+
+
+
