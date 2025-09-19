@@ -5,7 +5,7 @@
   - [What is flutter](#what-is-flutter)
   - [key terms and definitions](#key-terms-and-definitions)
   - [layout and design widgets](#layout-and-design-widgets)
-  - [Definitions with Structures](#flutter-definitions-with-struture)
+  - [Flutter Definitions with Structures](#flutter-definitions-with-struture)
 - [Code Definitions](#code-definitions)
 - [notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
 
@@ -39,6 +39,10 @@
 | named routes| predefinded paths to navigate between scrrens | '/', '/page2', '/page3',ect   |
 |main()| The funtion thqt runs the app|found in main.dart|
 ---
+
+
+
+
 ### Layout and Design Widgets
 - How do you center a widget?
 - How do you align something to the left or right?
@@ -237,13 +241,13 @@ Keep it simple, consistent, and clear.
 ## Flutter Definitions With Structures
 | Term | Definition and Description | Base Structure | Real Life Example | App Example |
 |------|----------------------------|----------------|-------------------|-------------|
-|   main   | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` | a car starting | an app starting  |
-|   MaterialApp   | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
-|   Scaffold   | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` | any template |  |
-|   Column   | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
-|    Row  | A widget that shows things side-by-side. | `Row(...)` |  |  |
-|    Container  | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  |
-|   Text   | A widget to display text on the screen. | `Text('Hello')` |  |  |
+|   main   | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` | a car starting | void main() => runApp(MyPortfolioApp());  |
+|   MaterialApp   | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  | eturn MaterialApp(debugShowCheckedModeBanner: false,title: 'TSA Portfolio',theme: ThemeData( and more |
+|   Scaffold   | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` | any template | return Scaffold(body: Column(mainAxisAlignment: MainAxisAlignment.start,children: [ and more|
+|   Column   | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  Column(children: [const Padding(padding: EdgeInsets.all(8.0),child: Text.rich( and more|
+|    Row  | A widget that shows things side-by-side. | `Row(...)` |  | Row(children: [ClipRRect( borderRadius: BorderRadius.circular(8), and more|
+|    Container  | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  return Container(margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),padding: const EdgeInsets.all(12),decoration: BoxDecoration(border: Border.all(color: Colors.blue),borderRadius: BorderRadius.circular(12),), child: Row(and more|
+|   Text   | A widget to display text on the screen. | `Text('Hello')` |  | child: Text(description,style: const TextStyle(color: Colors.white),), |
 |   image.network  | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
 |   Elevatedbutton   | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
 |    onPressed  | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
@@ -257,16 +261,16 @@ Keep it simple, consistent, and clear.
 |   Build widget   | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
 |   Build   | Required in every widget class to describe what to show. | `build` |  |  |
 |   Build Context   | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
-|   super.key   | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
+|   super.key   | A keyword used to pass a value to the parent widget. | `super.key` |  | const MyPortfolioApp({super.key}); |
 |   const   | A keyword that means the value won't change and is set once. | `const` |  |  |
 
 
 ## Code Definitions
 | Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
 |------|------------|--------------------------|-------------------|-------------|
-|   Variable   | A named container used to store a value that may change. | `var x = 5;` |  Goals in soccer|  |
-|   Constant   | A fixed value that cannot change once set. | `const PI = 3.14;` | your Username | File name |
-|   Data Type   | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` | Videos or numbers | THe different Data the code needs to store |
+|   Variable   | A named container used to store a value that may change. | `var x = 5;` |  Goals in soccer| main.dart, string title:  title: 'TSA Portfolio' |
+|   Constant   | A fixed value that cannot change once set. | `const PI = 3.14;` | your Username | const MyPortfolioApp({super.key}); |
+|   Data Type   | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` | Videos or numbers |  |
 |   String   | A sequence of characters used to represent words or text. | `"Hello World"` | words  | Titles on a website|
 |  Integer    | Whole number values. | `int age = 16;` | days on a calender | the total number of notifications you have |
 |   Double   | Number values with decimals. | `double age = 16.2;` |  | animations |
