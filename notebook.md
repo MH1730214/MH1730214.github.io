@@ -248,7 +248,7 @@ Keep it simple, consistent, and clear.
 |    Row  | A widget that shows things side-by-side. | `Row(...)` |  | Row(children: [ClipRRect( borderRadius: BorderRadius.circular(8), and more|
 |    Container  | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  return Container(margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),padding: const EdgeInsets.all(12),decoration: BoxDecoration(border: Border.all(color: Colors.blue),borderRadius: BorderRadius.circular(12),), child: Row(and more|
 |   Text   | A widget to display text on the screen. | `Text('Hello')` |  | child: Text(description,style: const TextStyle(color: Colors.white),), |
-|   image.network  | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
+|   image.network  | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  | "image": "https://placedog.net/550", |
 |   Elevatedbutton   | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
 |    onPressed  | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
 |   Stateless Widget   | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |  |
@@ -257,7 +257,7 @@ Keep it simple, consistent, and clear.
 |   padding   | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  
 |   center   | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
 |   wrap   | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
-|   @override   | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
+|   @override   | This marks a method as one that’s replacing a method in a parent class. | `@override` |  | @overrideWidget build(BuildContext context) {final List<Map<String, String>> dogInfo = [ |
 |   Build widget   | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
 |   Build   | Required in every widget class to describe what to show. | `build` |  |  |
 |   Build Context   | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
