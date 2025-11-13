@@ -38,6 +38,8 @@
 | Center |            centers its child                               |                                           |
 | named routes| predefinded paths to navigate between scrrens | '/', '/page2', '/page3',ect   |
 |main()| The funtion thqt runs the app|found in main.dart|
+| Algorithms | Define step by step processes to follow when completing a task or solving a problem | no syntax | Make a grilled cheese | Verify user |
+| Sequencing | Define an order for when steps in an algorithm are completed | Follows 1, 2, 3 | which step comes first in making a grilled cheese | Get bread, add butter, add cheese |
 ---
 
 
