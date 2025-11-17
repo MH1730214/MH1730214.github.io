@@ -48,6 +48,7 @@
 - How do you align something to the left or right?
 - What widget adds space around content?
 
+<img width="1201" height="400" alt="image" src="https://github.com/user-attachments/assets/48d37a85-576d-42d5-a99f-843eef7fa28a" />
 
 
 
