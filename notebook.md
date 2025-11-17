@@ -4,6 +4,7 @@
 - [Flutter notes](#flutter-notes)
   - [What is flutter](#what-is-flutter)
   - [key terms and definitions](#key-terms-and-definitions)
+  - [String Notes](#string-notes)
   - [layout and design widgets](#layout-and-design-widgets)
   - [Flutter Definitions with Structures](#flutter-definitions-with-struture)
 - [Code Definitions](#code-definitions)
@@ -40,15 +41,15 @@
 |main()| The funtion thqt runs the app|found in main.dart|
 ---
 
-
-
+[String Notes](#string-notes)
+<img width="1201" height="400" alt="image" src="https://github.com/user-attachments/assets/48d37a85-576d-42d5-a99f-843eef7fa28a" />
 
 ### Layout and Design Widgets
 - How do you center a widget?
 - How do you align something to the left or right?
 - What widget adds space around content?
 
-<img width="1201" height="400" alt="image" src="https://github.com/user-attachments/assets/48d37a85-576d-42d5-a99f-843eef7fa28a" />
+
 
 
 
